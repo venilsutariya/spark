@@ -25,7 +25,7 @@ const boundingBox = (layers: Layer[]): XYWH | null => {
             right = x + width;
         }
         
-        if ( top < y ) {
+        if ( top > y ) {
             top = y;
         }
         
